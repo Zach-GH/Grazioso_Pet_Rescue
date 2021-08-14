@@ -1,16 +1,23 @@
-package meisnerMonkeys;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package meisnerGravioso;
 
 /**
  *
- * @author Zachary Meisner
+ * @author prettyzucchini
  */
 public class Monkey extends RescueAnimal{
+
+    Monkey() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    Monkey(String name, String breed, String gender, String age, String weight, String tailLength, String height, String bodyLength, String acquisitionDate, String acquisitionCountry, String trainingStatus, boolean reserved, String inServiceCountry) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     //Add public enum of monkey species
     public enum Species {
         Capuchin, Geunon, Macaque, Marmoset, SquirrelMonkey, Tamarin;
@@ -57,7 +64,7 @@ public class Monkey extends RescueAnimal{
     public String getBodyLenth() {
         return bodyLength;
     }
-    public void setBodyLength(String bodyLenth) {
+    public void setBodyLength(String bodyLength) {
         this.bodyLength = bodyLength;
     }
     public String getSpecies() {
