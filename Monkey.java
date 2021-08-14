@@ -3,74 +3,74 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package meisnerGravioso;
+package monkeyRegistration;
 
 /**
  *
- * @author prettyzucchini
+ * @author Zachary Meisner
  */
-public class Monkey extends RescueAnimal{
 
-    Monkey() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+public class Monkey extends RescueAnimal {
 
-    Monkey(String name, String breed, String gender, String age, String weight, String tailLength, String height, String bodyLength, String acquisitionDate, String acquisitionCountry, String trainingStatus, boolean reserved, String inServiceCountry) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    //Add public enum of monkey species
-    public enum Species {
-        Capuchin, Geunon, Macaque, Marmoset, SquirrelMonkey, Tamarin;
-    }
-    //Instance Variables
-    private String tailLength;
-    private String height;
-    private String bodyLength;
-    private String species;
-    
-    //Constructor
-    public Monkey(String name, String gender, String age,
-            String weight, String acquisitionDate, String acquisitionCountry,
-            String trainingStatus, boolean reserved, String inServiceCountry,
-            String tailLength, String height, String bodyLength, String species) {
-        setName(name);
-        setSpecies(species);
-        setGender(gender);
-        setAge(age);
-        setWeight(weight);
-        setAcquisitionDate(acquisitionDate);
-        setAcquisitionLocation(acquisitionCountry);
-        setTrainingStatus(trainingStatus);
-        setReserved(reserved);
-        setInServiceCountry(inServiceCountry);
-        setTailLength(tailLength);
-        setHeight(height);
-        setBodyLength(bodyLength);
-    }
-    //Accessors and Mutators Getters and Setters
-    public String getTailLength() {
-        return tailLength;
-    }
-    
-    public void setTailLength(String tailLength) {
-        this.tailLength = tailLength;
-    }
-    public String getHeight() {
-        return height;
-    }
-    public void setHeight(String height) {
-        this.height = height;
-    }
-    public String getBodyLenth() {
-        return bodyLength;
-    }
-    public void setBodyLength(String bodyLength) {
-        this.bodyLength = bodyLength;
-    }
-    public String getSpecies() {
-        return species;
-    }
-    public void setSpecies(String species) {
-        this.species = species;
-    }
+	// Instance Variables
+	private String tailLength;
+	private String height;
+	private String bodyLength;
+	private String species;
+
+	// Add public enum of monkey species
+	public enum Species {
+		Capuchin, Geunon, Macaque, Marmoset, SquirrelMonkey, Tamarin;
+	}
+	//New Constructor
+	public Monkey(String name, String species, String gender, String age, String weight, String acquisitionDate,
+			String acquisitionCountry, String trainingStatus, boolean reserved, String inServiceCountry,
+			String tailLength, String height, String bodyLength) {
+		setName(name);
+		setSpecies(species);
+		setGender(gender);
+		setAge(age);
+		setWeight(weight);
+		setAcquisitionDate(acquisitionDate);
+		setAcquisitionLocation(acquisitionCountry);
+		setTrainingStatus(trainingStatus);
+		setReserved(reserved);
+		setInServiceCountry(inServiceCountry);
+		setTailLength(tailLength);
+		setHeight(height);
+		setBodyLength(bodyLength);
+	}
+
+	// Accessors and Mutators Getters and Setters
+	public String getTailLength() {
+		return tailLength;
+	}
+
+	public void setTailLength(String tailLength) {
+		this.tailLength = tailLength;
+	}
+
+	public String getHeight() {
+		return height;
+	}
+
+	public void setHeight(String height) {
+		this.height = height;
+	}
+
+	public String getBodyLenth() {
+		return bodyLength;
+	}
+
+	public void setBodyLength(String bodyLength) {
+		this.bodyLength = bodyLength;
+	}
+
+	public String getSpecies() {
+		return species;
+	}
+
+	public void setSpecies(String species) {
+		this.species = species;
+	}
 }
